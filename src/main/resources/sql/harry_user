@@ -1,0 +1,7 @@
+CREATE TABLE `harry_user` (
+  `user_id` int NOT NULL AUTO_INCREMENT COMMENT '用户id',
+  `uuid` char(32) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'UUID',
+  `user_name` varchar(256) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '用户姓名',
+  `user_password` varchar(256) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '用户密码',
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='用户表'
